@@ -10,9 +10,11 @@
 | **Cost**            | Higher cost due to server infrastructure and maintenance.                            | Lower cost, as there is no need for dedicated servers.                          |
 | **Reliability**     | High reliability if the server is maintained properly.                               | Can be less reliable due to dependence on individual nodes.                     |
 | **Data Management** | Centralized data storage. Easier to back up and restore.                             | Data is distributed across nodes. More complex data management.                 |
-| **Use Case**        | Suitable for environments requiring centralized control, such as businesses.         | Suitable for file sharing, decentralized applications.                          |
+     
 
-2.What are the seven layers of OSI model?What is the function of each layer?
+
+
+2. What are the seven layers of OSI model?What is the function of each layer?
 
 Open Systems Interconnection model is a conceptual framework used to understand and implement standardized communication between diverse systems.It divides communication process into seven distinct layers,each with specific functions.The seven layers of OSI model are as follows:
 
@@ -44,7 +46,6 @@ The OSI model is based on the following principle :
 | Feature                    | OSI Reference Model                                                         | TCP/IP Reference Model                                    |
 | -------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------- |
 | **Full Name**              | Open Systems Interconnection Model                                          | Transmission Control Protocol/Internet Protocol Model     |
-| **Development**            | Developed by ISO (International Organization for Standardization)           | Developed by the Department of Defense (DoD)              |
 | **Layers**                 | 7 layers                                                                    | 4 layers                                                  |
 | **Layer Names**            | Application, Presentation, Session, Transport, Network, Data Link, Physical | Application, Transport, Internet, Network Interface       |
 | **Protocol Specification** | General model, not specifying protocols in each layer                       | Specifies standard protocols in each layer                |
@@ -56,4 +57,4 @@ The OSI model is based on the following principle :
 | **Error Handling**         | Detailed error handling in multiple layers                                  | Error handling mainly in the Transport layer              |
 | **Ease of Implementation** | More complex to implement due to seven distinct layers                      | Easier to implement due to fewer layers                   |
 | **Examples of Protocols**  | Protocols like HTTP, FTP (Application); IP (Network)                        | HTTP (Application); TCP, UDP (Transport); IP (Internet)   |
-| **Popularity**             | Mainly used as a teaching tool and theoretical model                        | Widely used in real-world network implementations         |
+
