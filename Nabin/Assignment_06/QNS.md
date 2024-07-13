@@ -1,31 +1,40 @@
 1. How long is IPV6 header?
-:IPV6 header is 40 bytes long consisting 8 fields
+   :IPV6 header is 40 bytes long consisting 8 fields
 
 2. What are different fields on header? What are different purposes?
-: Fixed header - fields and their purpose are:
-version (4 bits)
-the constant 6 bits 0110 indicates it is IPV6
+   The IPv6 header contains several fields, each serving a specific purpose to facilitate the functioning and management of network traffic. Here’s a breakdown of the fields and their purposes:
 
-trafic class (8 bits)
-It has 6 bits for type of service and 2 bits for ECN
+   1. **Version (4 bits)**
 
-flow label (20 bits)
-It is for streaming real time data maintaing sequential flow of packets
+   - **Purpose:** Indicates the IP version number. For IPv6, this value is set to 6.
 
-payload length (16 bits)
-It tells router how much information a particular packet contains in its payload
+   2. **Traffic Class (8 bits)**
 
-next header (8 bits)  
-This field indicates either type of extension header or upper layer PDU
+   - **Purpose:** Used to specify the priority of the packet. It helps in traffic management and quality of service (QoS) by distinguishing different types of data (e.g., voice, video, data).
 
-hop limit (8 bits)
-It stops packet to loop in network infinitely (like TTL)
+   3. **Flow Label (20 bits)**
 
-source address (128 bits)
-This field contains address of originator packet
+   - **Purpose:** Used for labeling packets belonging to the same flow, allowing routers to handle packets with the same flow label in a consistent manner. This is useful for real-time services requiring consistent handling, like streaming or VoIP.
 
-destination address (128 bits)
-This field contains address of originator packet
+   4. **Payload Length (16 bits)**
+
+   - **Purpose:** Specifies the length of the payload (the data carried after the header) in bytes. The maximum payload length is 65,535 bytes.
+
+   5. **Next Header (8 bits)**
+
+   - **Purpose:** Identifies the type of header immediately following the IPv6 header. It can indicate an upper-layer protocol (such as TCP or UDP) or an extension header used for optional internet-layer information.
+
+   6. **Hop Limit (8 bits)**
+
+   - **Purpose:** Indicates the maximum number of hops a packet can take before being discarded. Each router that forwards the packet decrements this value by 1. When the value reaches 0, the packet is discarded to prevent it from looping indefinitely.
+
+   7. **Source Address (128 bits)**
+
+   - **Purpose:** Contains the IPv6 address of the originator of the packet. It is used for identifying the sender of the packet.
+
+   8. **Destination Address (128 bits)**
+
+   - **Purpose:** Contains the IPv6 address of the intended recipient of the packet. It is used for routing the packet to its final destination.
 
 Headers present in IPV6 packet in wireshark:
 
