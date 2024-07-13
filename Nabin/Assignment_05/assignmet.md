@@ -1,3 +1,5 @@
+## Q) What is the value of each of the header fields ? Explain why the value is what it is .
+
 -> Version: IPv4 (indicated by “0100”)
 The version field indicates the version of the IP protocol. The value 4 indicates that this is an IPv4 packet.
 
