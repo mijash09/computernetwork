@@ -1,4 +1,4 @@
-## Q) Capture an ID packet on wireshark. What is the value of each of the header fields ? Explain why the value is what it is .
+**Q) Capture an IP packet on wireshark. What is the value of each of the header fields ? Explain why the value is what it is .**
 
 ## -> Version: IPv4 (indicated by “0100”)
 

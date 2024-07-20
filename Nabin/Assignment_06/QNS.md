@@ -1,7 +1,7 @@
-1. How long is IPV6 header?
+## 1. How long is IPV6 header?
    :IPV6 header is 40 bytes long consisting 8 fields
 
-2. What are different fields on header? What are different purposes?
+## 2. What are different fields on header? What are different purposes?
    The IPv6 header contains several fields, each serving a specific purpose to facilitate the functioning and management of network traffic. Here’s a breakdown of the fields and their purposes:
 
    1. **Version (4 bits)**
